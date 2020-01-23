@@ -1,0 +1,19 @@
+/* Menu */
+.bg-dark {
+    background-color: rgb(55, 39, 66) !important;
+}
+
+  /* flexbox */
+.masonry { 
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.masonry-img {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 8px 8px 0;
+}
