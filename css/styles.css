@@ -11,6 +11,7 @@
 }
 
 /* masonry using flexbox */
+/* old version
 .masonry { 
     display: flex;
     flex-flow: row wrap;
@@ -24,22 +25,38 @@
     height: 250px;
     min-width: 150px;
     margin: 0 8px 8px 0;
+} */
+
+.masonry { 
+    width: 100%;
+    padding: 5px;
+    columns: 4;
+    column-gap: 10px;
 }
+
+.masonry-img {
+    width: 100%;
+    overflow: hidden;
+    break-inside: avoid;
+    margin: 5px;
+}
+
+
 
 .reviews {
-    display: flex;
-    flex-flow: row wrap;
     width: 100%;
-    justify-content: center;
-    margin-top: 8px;
+    margin: 20px auto;
+    columns: 4;
 }
 .review-content {
-    flex: ;
-    width: 20px;
-
-    margin: 0 8px 8px 0;
-    background-color: brown;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    overflow: hidden;
+    break-inside: avoid;
+    background-color: rgb(211, 211, 211);
 }
+
 
 html, body {
     height: 100%;
