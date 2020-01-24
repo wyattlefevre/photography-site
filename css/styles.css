@@ -1,9 +1,16 @@
 /* Menu */
 .bg-dark {
-    background-color: rgb(55, 39, 66) !important;
+    background-color: rgb(34, 34, 34) !important;
 }
 
-  /* flexbox */
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 1%
+}
+
+/* masonry using flexbox */
 .masonry { 
     display: flex;
     flex-flow: row wrap;
@@ -16,4 +23,18 @@
     height: 250px;
     min-width: 150px;
     margin: 0 8px 8px 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
 }
