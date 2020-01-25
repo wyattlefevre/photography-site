@@ -66,10 +66,13 @@
     .about-image {
         margin-top: 30px;
     }
+    .home-content {
+        margin: 0 30px;
+    }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 501px) and (max-width: 650px) {
+@media only screen and (min-width: 501px) and (max-width: 700px) {
     .masonry { 
         width: 100%;
         columns: 2;
@@ -91,9 +94,13 @@
     .about-image {
         margin-top: 30px;
     }
+    .home-content {
+        margin: 0 30px;
+        display: flex;
+    }
 }
 
-@media only screen and (min-width: 651px) and (max-width: 960px) {
+@media only screen and (min-width: 701px) and (max-width: 960px) {
     .masonry { 
         width: 100%;
         columns: 3;
@@ -113,6 +120,11 @@
         margin-left: 30px;
         margin-right: 30px;
     }
+    .home-content {
+        margin: 0 30px;
+        display: flex;
+    }
+
 }
 
 /* Desktop Styles */
@@ -136,7 +148,36 @@
         margin-left: 30px;
         margin-right: 30px;
     }
+    .home-content {
+        display: flex;
+        margin: 0 30px;
+    }
 }
+
+.home {
+    display: block;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+
+.home-header {
+    margin: 0 30px;
+}
+
+.home-image {
+    width: 60%;
+    max-width: 1500px;
+    min-width: 300px;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.home-text {
+    margin-right: 10px;
+    color: rgb(82, 82, 82);
+}
+
 .masonry-img {
     width: 100%;
     overflow: hidden;
@@ -163,9 +204,14 @@
 
 .about-content{
     margin: 0 30px;
+    color: rgb(82, 82, 82);
 }
 .about-header {
     margin-left: 30px;
+}
+
+.about-text {
+    margin-right: 10px;
 }
 
 .about-image img {
@@ -175,9 +221,7 @@
     border-radius: 4px;
 }
 
-.about-text {
-    margin-right: 10px;
-}
+
 .wrapper {
     display: block;
     max-width: 1000px;
@@ -194,9 +238,20 @@ body {
 .content {
     flex: 1 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
 }
 .footer {
     flex-shrink: 0;
     background-color: rgb(34, 34, 34);
+    display: flex;
+}
+.footer-content {
+    color: white;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.link:hover{
+    color: red;
 }
